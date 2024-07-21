@@ -1,0 +1,27 @@
+{
+  "name": "live-tracking",
+  "version": "1.0.0",
+  "description": "Js and html",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavananingi/Live-tracking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavananingi/Live-tracking/issues"
+  },
+  "homepage": "https://github.com/pavananingi/Live-tracking#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "socket.io": "^4.7.5"
+  }
+}

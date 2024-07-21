@@ -4,7 +4,7 @@ const socketIo = require('socket.io');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 3010;
+const port = process.env.PORT || 3399;
 const server = http.createServer(app);
 const io = socketIo(server);
 
