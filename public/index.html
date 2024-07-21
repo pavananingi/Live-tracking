@@ -1,137 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Live Tracking</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume of Pavan Kalyan Aningi</title>
     <style>
-        #map { height: 600px; width: 100%; }
-        .inputs {
-            margin-bottom: 20px;
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-        .inputs label {
-            margin-right: 10px;
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        header {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h1, h2, h3 {
+            margin: 0 0 10px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #4CAF50;
+        }
+
+        .contact {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+
+        section {
+            padding: 20px 0;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li strong {
+            color: #333;
+        }
+
+        ul li ul {
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .animate__animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .animate__fadeInDown {
+            animation-name: fadeInDown;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate__fadeInLeft {
+            animation-name: fadeInLeft;
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animate__fadeInRight {
+            animation-name: fadeInRight;
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animate__fadeInUp {
+            animation-name: fadeInUp;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-top: 20px;
         }
     </style>
-    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4_94-AWIC-I8IcnVuG4NwOR-eI-CG5SA"></script>
 </head>
 <body>
-    <h1>Live Tracking</h1>
-    <div class="inputs">
-        <label>Start Latitude: <input type="text" id="startLat" value="17.434199"></label>
-        <label>Start Longitude: <input type="text" id="startLng" value="78.405214"></label>
-        <label>End Latitude: <input type="text" id="endLat" value="17.444860"></label>
-        <label>End Longitude: <input type="text" id="endLng" value="78.455920"></label>
-        <button onclick="startTracking()">Start Tracking</button>
+    <div class="container">
+        <header>
+            <img src="C:\Users\LENOVO\Downloads\Pass photo (1).jpg" alt="Profile Picture" class="profile-picture animate__animated animate__fadeInDown">
+            <h1 class="animate__animated animate__fadeInDown">Pavan Kalyan Aningi</h1>
+            <p class="contact animate__animated animate__fadeInLeft">
+                Phone: 9505950521 | Email: <a href="mailto:pavan.aningi1998@gmail.com">pavan.aningi1998@gmail.com</a>
+            </p>
+            <h2 class="animate__animated animate__fadeInRight">AWS DevOps Engineer</h2>
+        </header>
+        <section class="animate__animated animate__fadeInUp">
+            <h3>Professional Experience</h3>
+            <ul>
+                <li>
+                    <strong>Company Name</strong> - Genamplify solutions hub pvt ltd
+                    <ul>
+                        <li>•   1 year of IT Industry experience with AWS Cloud with DevOps..</li>
+                        <li>•   Experience as AWS, Cloud, and DevOps engineer, as well as Linux Systems Administrator.</li>
+                        <li>•	Experience in Amazon AWS Cloud Services, (EC2, S3, ELB, Cloud Watch, Elastic IP, RDS, SNS, S3 Buckets, S3 Glacier, IAM, VPC, Cloud Formation, Route53), and managing security on AWS.</li>
+                        <li>•	Automate AWS services including web servers, ELB, RDS Databases, EC2s and security groups, and S3 bucket and application configuration.</li>
+                        <li>•	Built and deployed applications by adopting DevOps practices such as CI/CD in runtime with various tools such as Jenkins, Ansible.</li>
+                        <li>•	Worked with containerization tools such as Docker.</li>
+                        <li>•	Expertise with monitoring tools like Cloud Watch.</li>
+
+
+                    </ul>
+                </li>
+                
+                <!-- Add more experiences as needed -->
+            </ul>
+        </section>
+        <section class="animate__animated animate__fadeInUp">
+            <h3>Education</h3>
+            <ul>
+                <li><strong>Andhra University</strong> - BSc computer science (2021)</li>
+                <!-- Add more educational qualifications as needed -->
+            </ul>
+        </section>
+        <section class="animate__animated animate__fadeInUp">
+            <h3>Skills</h3>
+            <ul>
+                <li>AWS Cloud </li>
+                <li>CI/CD Pipelines with Jenkins</li>
+                <li>Infrastructure as Code (Terraform)</li>
+                <li>DevOps- Github, Maven, Tomcat, Jenkins, Soanrqube, Nexus, Docker, Kuberenetes</li>
+                <!-- Add more skills as needed -->
+        <section class="animate__animated animate__fadeInUp">
+            <h3>Personal Details</h3>
+            <ul>
+                <li>Name          :Pavan kalyan Aningi</li>
+                <li>Mail          :pavan.aningi1998@gmail.com</li>
+                <li>Father’s Name :Jagadeesh Aningi</li>
+                <li>Nationality   :Indian</li>                   
+                <li>Languages     :English, Telugu, Hindi</li>
+                <li>Marital status:Single</li>
+                        <!-- Add more skills as needed -->
+            </ul>
+            
+        </section>
     </div>
-    <div id="map"></div>
-    <div class="status" id="status"></div>
-    <script>
-        let map;
-        let agentMarker;
-        let startLat, startLng, endLat, endLng;
-        let trackingInterval = 5000; // Update interval in milliseconds
-        let tracking;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 17.434199, lng: 78.405214 },
-                zoom: 13
-            });
-
-            // Set the default start and end markers
-            const startMarker = new google.maps.Marker({
-                position: { lat: 17.434199, lng: 78.405214 },
-                map: map,
-                label: 'Start'
-            });
-
-            const endMarker = new google.maps.Marker({
-                position: { lat: 17.444860, lng: 78.455920 },
-                map: map,
-                label: 'End'
-            });
-
-            // Draw the path on the map
-            const pathCoordinates = [
-                { lat: 17.434199, lng: 78.405214 },
-                { lat: 17.444860, lng: 78.455920 }
-            ];
-
-            const path = new google.maps.Polyline({
-                path: pathCoordinates,
-                geodesic: true,
-                strokeColor: '#FF0000',
-                strokeOpacity: 1.0,
-                strokeWeight: 2
-            });
-
-            path.setMap(map);
-        }
-
-        function startTracking() {
-            startLat = parseFloat(document.getElementById('startLat').value);
-            startLng = parseFloat(document.getElementById('startLng').value);
-            endLat = parseFloat(document.getElementById('endLat').value);
-            endLng = parseFloat(document.getElementById('endLng').value);
-
-            if (isNaN(startLat) || isNaN(startLng) || isNaN(endLat) || isNaN(endLng)) {
-                alert('Please enter valid coordinates.');
-                return;
-            }
-
-            if (tracking) {
-                clearInterval(tracking);
-            }
-
-            updateAgentLocation();
-            tracking = setInterval(updateAgentLocation, trackingInterval); // Update location every 5 seconds
-        }
-
-        function updateAgentLocation() {
-            fetch('http://localhost:3000/track/agent123') // Replace with your backend API
-            .then(response => response.json())
-            .then(data => {
-                if (data.latitude == null || data.longitude == null) {
-                    document.getElementById('status').textContent = 'No location data available.';
-                    return;
-                }
-
-                const position = { lat: data.latitude, lng: data.longitude };
-
-                if (agentMarker) {
-                    agentMarker.setPosition(position);
-                } else {
-                    agentMarker = new google.maps.Marker({
-                        position: position,
-                        map: map
-                    });
-                }
-
-                const followingPath = checkPathFollowing(data.latitude, data.longitude);
-                document.getElementById('status').textContent = followingPath ? 'Following Path' : 'Off Path';
-                agentMarker.setLabel(followingPath ? 'Following Path' : 'Off Path');
-                map.setCenter(position);
-            })
-            .catch(error => console.error('Error:', error));
-        }
-
-        function checkPathFollowing(currentLat, currentLng) {
-            const startDistance = computeDistance(currentLat, currentLng, startLat, startLng);
-            const endDistance = computeDistance(currentLat, currentLng, endLat, endLng);
-            return startDistance <= 0.5 && endDistance <= 0.5;
-        }
-
-        function computeDistance(lat1, lng1, lat2, lng2) {
-            const R = 6371; // Radius of the Earth in km
-            const dLat = (lat2 - lat1) * Math.PI / 180;
-            const dLng = (lng2 - lng1) * Math.PI / 180;
-            const a = 
-                0.5 - Math.cos(dLat)/2 + 
-                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
-                (1 - Math.cos(dLng))/2;
-            return R * 2 * Math.asin(Math.sqrt(a));
-        }
-
-        window.onload = initMap;
-    </script>
 </body>
 </html>
